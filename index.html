@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dronacharya Library Control Center</title>
+  <title>Dronacharya Library Dashboard</title>
   <style>
     html, body {
       margin: 0;
@@ -11,7 +11,14 @@
       width: 100%;
       height: 100%;
       overflow: hidden;
-      background-color: #000;
+      background-color: #f4f6f8;
+    }
+    .iframe-wrapper {
+      position: absolute;
+      top: -38px; /* Google ke banner ko top se upar screen ke bahar push kar dega */
+      left: 0;
+      width: 100%;
+      height: calc(100% + 38px); /* Full height maintain rakhne ke liye */
     }
     iframe {
       width: 100%;
@@ -21,6 +28,8 @@
   </style>
 </head>
 <body>
-  <iframe src="https://script.google.com/macros/s/AKfycbxmHyDYXTx90CO_2J7Og-m1EzjHlNoubFc9lXVy8CCHdnNGeTBo4tOaAM-EuGDq7oZG8A/exec"></iframe>
+  <div class="iframe-wrapper">
+    <iframe src="https://script.google.com/macros/s/AKfycbxmHyDYXTx90CO_2J7Og-m1EzjHlNoubFc9lXVy8CCHdnNGeTBo4tOaAM-EuGDq7oZG8A/exec"></iframe>
+  </div>
 </body>
 </html>
